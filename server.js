@@ -21,7 +21,7 @@ var nameSchema = new mongoose.Schema({
 var User = mongoose.model("registration", nameSchema);
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index1.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/addname", (req, res) => {
